@@ -1,8 +1,9 @@
 include <roundedcube.scad>
 
 //user variables
-socket_diameter = 15; // measured diameter of the sockets
-number_of_sockets = 11;
+socket_diameter = 19; // measured diameter of the sockets
+socket_clearance = 1.5;
+number_of_sockets = 5;
 overall_height = 12; // overall height of the organizer
 spacing_offset = 0; // use this for sockets that are wider than the base of the socket
 drive_size = .250;
@@ -14,7 +15,7 @@ socket_nub = drive_size * 25.4;
 //calculated variables
 overall_width = socket_diameter + 6;
 overall_length = socket_diameter + spacing_offset + 2;
-socket_hole_radius = (socket_diameter + 1.5) / 2;
+socket_hole_radius = (socket_diameter + socket_clearance) / 2;
 socket_hole_depth = overall_height - floor_depth;
 
 //create overall holder
@@ -34,5 +35,5 @@ for (i = [0:1:number_of_sockets - 1]) {
         cube([socket_nub, socket_nub, socket_hole_depth], center = true);
     translate(v = [((overall_length * i) + (overall_length / 2)), (overall_width / 2), (floor_depth + (socket_hole_depth) - 2.001)])
         rotate([0, 0, 45])
-        cylinder(h = 2, r1 = socket_nub - 2, r2 = socket_nub - 4, $fn = 4);
+        cylinder(h = 2, r1 = socket_nub - (socket_nub / 3), r2 = socket_nub / 3.5, $fn = 4);
 }
