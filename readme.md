@@ -10,7 +10,6 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 - drive_size - size of square socket drive. 0.250 for 1/4, 0.375 for 3/8, 0.500 for 1/2.
 
 ## Upcoming
-- 3/8 and 1/2 drive models (or paramter to chose)
 - variable hole sizes
 
 ## Changelog
