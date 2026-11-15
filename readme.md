@@ -16,6 +16,6 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 
 ## Changelog
 
-0.1 - Created a 1/4 drive model
-0.2 - Rounded the corners of the organizer
-0.3 - Added parameter for drive size
+- 0.1 - Created a 1/4 drive model
+- 0.2 - Rounded the corners of the organizer
+- 0.3 - Added parameter for drive size
