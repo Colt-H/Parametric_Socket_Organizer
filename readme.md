@@ -1,6 +1,6 @@
 # Parametric Socket Organizer
 
-Creates a socket organizer using OpenSCAD. I didn't like any of the available options I'd found online and wanted a configurable one that would be able to work with any socket brand, type, or design since I have many different ones in my toolbox. 
+Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like any of the available options I'd found online and wanted a configurable one that would be able to work with any socket brand, type, or design since I have many different ones in my toolbox. 
 
 ### inputs
 - socket_diameter - Measured diameter of the socket. 
