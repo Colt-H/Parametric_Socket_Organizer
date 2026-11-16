@@ -5,7 +5,7 @@ socket_diameter = 13.25; // measured diameter of the sockets
 socket_clearance = 1.5; // added to diameter
 number_of_sockets = 7;
 overall_height = 12; // overall height of the organizer
-spacing_offset = -5; // use this for sockets that are wider than the base of the socket
+spacing_offset = 0; // use this for sockets that are wider than the base of the socket
 drive_size = .250;
 
 // constants
@@ -22,7 +22,7 @@ socket_hole_depth = overall_height - floor_depth;
 assert(socket_diameter > socket_nub, "Socket diameter is too small for drive size.");
 assert(socket_node_len * number_of_sockets <= 225, "Organizer longer than standard build plate.")
 assert((socket_node_len / 2) + (socket_node_len) > (socket_diameter + socket_clearance), "Socket spacing smaller than sockets, increase spacing offset.")
-assert(socket_hole_radius > socket_diameter, "Socket hole too small, increase socket clearance.")
+assert((socket_hole_radius * 2) >= socket_diameter, "Socket hole too small, increase socket clearance.")
 assert(socket_hole_depth > 0, "Socket hole invalid, increase overall height.")
 assert(drive_size < 1, "Socket drive size should be entered in SAE units.")
 
