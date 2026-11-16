@@ -22,3 +22,6 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 - 0.4.1 - Updated socket nub chamfered top as the original calculation didn't work with the updated drive size
 - 0.5.0 - Added error checking for user inputs
 - 0.5.1 - Incorrect socket hole error checking fixed
+
+## Credits
+[RoundedCube By Daniel Upshaw](https://danielupshaw.com/openscad-rounded-corners/)

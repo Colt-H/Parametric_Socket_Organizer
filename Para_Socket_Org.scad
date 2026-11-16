@@ -1,12 +1,12 @@
 include <roundedcube.scad>
 
 // user variables
-socket_diameter = 13.25; // measured diameter of the sockets
+socket_diameter = 27; // measured diameter of the sockets
 socket_clearance = 1.5; // added to diameter
 number_of_sockets = 7;
-overall_height = 12; // overall height of the organizer
+overall_height = 10; // overall height of the organizer
 spacing_offset = 0; // use this for sockets that are wider than the base of the socket
-drive_size = .250;
+drive_size = .5;
 
 // constants
 floor_depth = 2;
