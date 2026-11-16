@@ -8,7 +8,7 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 - number_of_sockets - The number of sockets in the organizer.
 - overall_height - The height of the organizer. I typically make mine about 10mm high to keep them a little more secure.
 - spacing_offset - This parameter allows you to space the sockets out more, needed for sockets like ball swivel style where the base is smaller than the socket head.
-- drive_size - size of square socket drive. 0.250 for 1/4, 0.375 for 3/8, 0.500 for 1/2. You can cheat this up a little bit if you like the sockets to stick more. 
+- drive_size - size of square socket drive. 0.250 for 1/4, 0.375 for 3/8, 0.500 for 1/2. You can cheat this up a little bit (a few thousandths) if you like the sockets to stick more. 
 
 ## Upcoming
 - variable hole sizes
