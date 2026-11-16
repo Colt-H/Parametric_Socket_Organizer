@@ -11,9 +11,6 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 - drive_size - size of square socket drive. 0.250 for 1/4, 0.375 for 3/8, 0.500 for 1/2. You can cheat this up a little bit (a few thousandths) if you like the sockets to stick more. 
 
 ## Upcoming
-- variable hole sizes
-- error checking
-- multi piece versions
 - combine drive sizes
 
 ## Changelog
@@ -23,3 +20,4 @@ Creates a socket organizer using OpenSCAD meant for 3D printing. I didn't like a
 - 0.3.0 - Added parameter for drive size
 - 0.4.0 - Added socket clearance parameter
 - 0.4.1 - Updated socket nub chamfered top as the original calculation didn't work with the updated drive size
+- 0.5.0 - Added error checking for user inputs

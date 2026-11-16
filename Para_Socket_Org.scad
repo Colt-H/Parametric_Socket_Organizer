@@ -10,7 +10,7 @@ drive_size = .250;
 
 // constants
 floor_depth = 2;
-socket_nub = drive_size * 25.4;
+socket_nub = drive_size * 25.4; // convert from standard to metric
 
 // calculated variables
 overall_width = socket_diameter + 6;
@@ -24,6 +24,7 @@ assert(overall_length * number_of_sockets <= 225, "Organizer longer than standar
 assert((overall_length / 2) + (overall_length) > (socket_diameter + socket_clearance), "Socket spacing smaller than sockets, increase spacing offset.")
 assert(socket_hole_radius > socket_diameter, "Socket hole too small, increase socket clearance.")
 assert(socket_hole_depth > 0, "Socket hole invalid, increase overall height.")
+assert(drive_size < 1, "Socket drive size should be entered in SAE units.")
 
 // create overall holder
 difference() {
